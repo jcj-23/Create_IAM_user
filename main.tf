@@ -3,7 +3,6 @@ provider "aws" {
 }
 
 module "create_iam_users" {
-  source = ".IAM_Module"
-
-  users = ["John", "Clinton", "Jay"]  # List of IAM user names you want to create
+  source = "./IAM_Module"
+  iam_user_names = ["Stephen", "Clinton", "Peter"]  # List of IAM user names you want to create
 }
